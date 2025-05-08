@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="emp" class="com.ashi.entities.Employee" autowire="byType" >
+   <!-- Setter(Primitives )  -->
+   
+    <property name="id" value="101"></property>
+    <property name="name" value="jack"></property>
+    <property name="salary" value="5000.54"></property>
+    
+   <!-- <property name="address" ref="add" ></property> -->
+    
+    
+  
+     
+   <!-- Constructor  -->
+   <!-- Normal way(Order is important) 
+   <constructor-arg value="102"></constructor-arg>
+    <constructor-arg value="jack"></constructor-arg>
+   <constructor-arg value="1200.54"></constructor-arg>
+   <constructor-arg ref = "add" ></constructor-arg>
+-->
+  
+     <!-- using index attribute 
+     <constructor-arg index="1" value="jack"></constructor-arg>
+   <constructor-arg index="0" value="102"></constructor-arg>
+ 
+   <constructor-arg index="2" value="1200.54"></constructor-arg>
+   <constructor-arg index="3" ref = "add" ></constructor-arg>
+  -->
+  </bean>
+  
+  
+  <bean id="address" class="com.ashi.entities.Address" primary="true" />
+
+  <bean id="address1" class="com.ashi.entities.Address" />
+  
+ 
+
+
+
+
+</beans>

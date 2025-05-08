@@ -10,7 +10,7 @@ public class SpringMainApplication {
 	
 	public static void main(String[] args) {
 		
-	   ApplicationContext context = new FileSystemXmlApplicationContext("S:\\gitLocalRepo\\SpringProjects\\SpringCoreApp2\\ApplicationContext.xml");
+	   ApplicationContext context = new FileSystemXmlApplicationContext("E:\\gitLocalRepo\\SpringProjects\\SpringCoreApp2\\ApplicationContext.xml");
 		 
 		
 		//Singleton objects => default scope of Spring Bean in IOC container is Singleton

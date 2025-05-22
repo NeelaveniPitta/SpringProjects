@@ -42,6 +42,8 @@ public class MainApplication
 		 */
     	
     	
+    	
+    	
     	//XML configuration
     	
     	ApplicationContext context = new FileSystemXmlApplicationContext("S:\\gitLocalRepo\\SpringProjects\\SpringBeanScopesAndLifeCycles\\ApplicationContext.xml");

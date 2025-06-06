@@ -21,9 +21,17 @@ public class EmployeeService {
     public List<EmpEntity> getEmployees() throws SQLException {
     	return repo.getAllEmmployees();
     }
+    public boolean addEmployee(EmpEntity emp) throws SQLException {
+    	return repo.addEmployee(emp);
+    }
+    
     
     public boolean delete(Integer eid) throws SQLException {
     	return repo.deleteEmployee(eid);
+    }
+    
+    public EmpEntity getEmployeeById(Integer id) throws SQLException {
+    	return repo.getEmployee(id);
     }
     
 	

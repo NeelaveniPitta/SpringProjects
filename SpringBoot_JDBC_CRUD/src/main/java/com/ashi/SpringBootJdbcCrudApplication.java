@@ -37,13 +37,31 @@ public class SpringBootJdbcCrudApplication {
 			switch (ch) {
 
 			case 1:
-				System.out.println("Ëmployee List : ");
+				System.out.println("Employee List : ");
 				List<EmpEntity> employees = employeeController.getEmployeeService().getEmployees();
 
 				employees.stream().forEach(System.out::println);
 				break;
 			case 2:
 				System.out.println("Add employee");
+				System.out.println("Enter employee Id: ");
+				int id = sc.nextInt();
+				System.out.println("Enter Employee Name: ");
+				String name = sc.next();
+				System.out.println("Enter employee age: ");
+				int age = sc.nextInt();
+				System.out.println("Enter employee Department: ");
+				String department = sc.next();
+				System.out.println("Enter employee salary: ");
+				double salary = sc.nextDouble();
+				System.out.println("Enter employee");
+				EmpEntity emp = new EmpEntity(id, name, age, department, salary);
+				if(employeeController.getEmployeeService().addEmployee(emp)) {
+					System.out.println("Employee added successfully.");
+				}
+				else {
+					System.out.println("Employee not added!!!");
+				}
 				break;
 			case 3:
 				System.out.println("delete employee ? enter ID :");
@@ -58,7 +76,17 @@ public class SpringBootJdbcCrudApplication {
 				
 				break;
 			case 4 :
-				  System.out.println("Get Employee By id  ?");
+				  System.out.println("Get Employee By id ? enter ID :");
+				  int empID = sc.nextInt();
+				  
+				  EmpEntity employee = employeeController.getEmployeeService().getEmployeeById(empID);
+				  if(employee != null) {
+					  System.out.println(employee);
+				  }
+				  else {
+					  System.out.println("Employee ID not found!!");
+				  }
+				  				  
 				  break;
 			case 5 :
 				System.exit(0);

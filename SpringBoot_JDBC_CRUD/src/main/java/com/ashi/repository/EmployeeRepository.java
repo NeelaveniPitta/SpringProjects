@@ -45,7 +45,23 @@ public class EmployeeRepository {
 		return employees;
 
 	}
-
+	
+	// add employee
+	
+	public boolean addEmployee(EmpEntity emp) throws SQLException {
+		String qry = "insert into emp values(?,?,?,?,?)";
+		Connection connection = dataSource.getConnection();
+		PreparedStatement pstm = connection.prepareStatement(qry);
+		pstm.setInt(1, emp.getId());
+		pstm.setString(2, emp.getName());
+		pstm.setInt(3, emp.getAge());
+		pstm.setString(4, emp.getDepartment());
+		pstm.setDouble(5, emp.getSalary());
+		int k = pstm.executeUpdate();
+		return k>0;
+	}
+	
+	
 	// delete employee
 
 	public boolean deleteEmployee(Integer eid) throws SQLException {
@@ -59,5 +75,52 @@ public class EmployeeRepository {
 		int rows = pstm.executeUpdate();
 		return rows > 0; //rows = 0 ---> no deletions 
 	}
+	
+	
+	
+	//Get employee By ID
+	public EmpEntity getEmployee(Integer id) throws SQLException {
+		String qry = "select * from emp where id = ?";
+        EmpEntity emp = null;
+		Connection connection = dataSource.getConnection();
+
+		PreparedStatement pstm = connection.prepareStatement(qry);
+		pstm.setInt(1, id);
+		
+		ResultSet res = pstm.executeQuery();
+		if(res.next()) {
+		  emp = new EmpEntity(res.getInt("id"), res.getString("name"), res.getInt("age"), res.getString("department"), res.getDouble("salary"));
+		}
+		
+		return emp;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

@@ -13,8 +13,4 @@ target/
 .springBeans
 .sts4-cache
 
-.gitattributes
-maven-wrapper.properties
-mvnw
-mvnw.cmd
 

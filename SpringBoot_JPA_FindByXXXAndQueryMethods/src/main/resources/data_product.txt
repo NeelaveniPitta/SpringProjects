@@ -1,0 +1,69 @@
+
+INSERT INTO products (product_name, description, price, category, brand, created_at, Active_SW, stock_quantity)
+VALUES 
+('Apple iPhone 14', 'Latest iPhone with A15 Bionic chip', 79999.00, 'Smartphones', 'Apple', NOW(), TRUE, 50),
+
+('Samsung Galaxy S23', 'Flagship Android smartphone with powerful camera', 74999.00, 'Smartphones', 'Samsung', NOW(), TRUE, 30),
+
+('Dell XPS 15', 'High-performance laptop for professionals', 124999.00, 'Laptops', 'Dell', NOW(), TRUE, 20),
+
+('Sony WH-1000XM5', 'Noise-cancelling wireless headphones', 29999.00, 'Audio', 'Sony', NOW(), TRUE, 40),
+
+('Canon EOS 200D', 'DSLR camera with dual pixel autofocus', 45999.00, 'Cameras', 'Canon', NOW(), TRUE, 15),
+
+('HP Pavilion 15', 'Everyday laptop with Intel i5 processor', 55999.00, 'Laptops', 'HP', NOW(), TRUE, 25),
+
+('Nike Air Max 90', 'Stylish and comfortable running shoes', 8999.00, 'Footwear', 'Nike', NOW(), TRUE, 100),
+
+('Samsung 55" QLED TV', '4K Smart TV with Quantum Dot technology', 89999.00, 'Television', 'Samsung', NOW(), TRUE, 10),
+
+('Boat Rockerz 450', 'Bluetooth wireless headphones', 1999.00, 'Audio', 'Boat', NOW(), TRUE, 75),
+
+('Logitech MX Master 3', 'Ergonomic wireless mouse', 7999.00, 'Accessories', 'Logitech', NOW(), TRUE, 60);
+
+
+INSERT INTO products (product_name, description, price, category, brand, created_at, Active_SW, stock_quantity)
+VALUES 
+('Apple iPhone 14', 'Latest iPhone with A15 Bionic chip', 79999.00, 'Smartphones', 'Apple', NOW(), TRUE, 50),
+('Samsung Galaxy S23', 'Flagship Android smartphone with powerful camera', 74999.00, 'Smartphones', 'Samsung', NOW(), TRUE, 30),
+('Dell XPS 15', 'High-performance laptop for professionals', 124999.00, 'Laptops', 'Dell', NOW(), TRUE, 20),
+('Sony WH-1000XM5', 'Noise-cancelling wireless headphones', 29999.00, 'Audio', 'Sony', NOW(), TRUE, 40),
+('Canon EOS 200D', 'DSLR camera with dual pixel autofocus', 45999.00, 'Cameras', 'Canon', NOW(), TRUE, 15),
+('HP Pavilion 15', 'Everyday laptop with Intel i5 processor', 55999.00, 'Laptops', 'HP', NOW(), TRUE, 25),
+('Nike Air Max 90', 'Stylish and comfortable running shoes', 8999.00, 'Footwear', 'Nike', NOW(), TRUE, 100),
+('Samsung 55" QLED TV', '4K Smart TV with Quantum Dot technology', 89999.00, 'Television', 'Samsung', NOW(), TRUE, 10),
+('Boat Rockerz 450', 'Bluetooth wireless headphones', 1999.00, 'Audio', 'Boat', NOW(), TRUE, 75),
+('Logitech MX Master 3', 'Ergonomic wireless mouse', 7999.00, 'Accessories', 'Logitech', NOW(), TRUE, 60),
+
+('OnePlus Nord CE 3 Lite', 'Affordable smartphone with 108MP camera', 19999.00, 'Smartphones', 'OnePlus', NOW(), TRUE, 45),
+('Redmi Note 12', 'Budget 5G Android phone', 17999.00, 'Smartphones', 'Xiaomi', NOW(), TRUE, 70),
+('Realme Narzo N55', 'Budget-friendly smartphone with fast charging', 12999.00, 'Smartphones', 'Realme', NOW(), TRUE, 65),
+('Apple MacBook Air M2', 'Ultralight Apple laptop with M2 chip', 99999.00, 'Laptops', 'Apple', NOW(), TRUE, 12),
+('Asus ROG Strix G15', 'Gaming laptop with high refresh rate screen', 94999.00, 'Laptops', 'Asus', NOW(), TRUE, 18),
+('Lenovo IdeaPad Slim 5', 'Slim and powerful laptop for students', 49999.00, 'Laptops', 'Lenovo', NOW(), TRUE, 22),
+('JBL Flip 6', 'Portable waterproof Bluetooth speaker', 7999.00, 'Audio', 'JBL', NOW(), TRUE, 50),
+('Apple AirPods Pro 2', 'Wireless earbuds with noise cancellation', 25999.00, 'Audio', 'Apple', NOW(), TRUE, 30),
+('Realme Buds Wireless 3', 'Neckband Bluetooth earphones', 1799.00, 'Audio', 'Realme', NOW(), TRUE, 80),
+('Nikon Z50', 'Mirrorless camera for creators', 75999.00, 'Cameras', 'Nikon', NOW(), TRUE, 10),
+
+('GoPro Hero 11 Black', 'Action camera with 5K video', 42999.00, 'Cameras', 'GoPro', NOW(), TRUE, 12),
+('Fujifilm X-T30 II', 'Compact mirrorless camera with vintage look', 84999.00, 'Cameras', 'Fujifilm', NOW(), TRUE, 8),
+('Adidas Ultraboost 22', 'Running shoes with energy return', 10999.00, 'Footwear', 'Adidas', NOW(), TRUE, 75),
+('Puma Velocity Nitro 2', 'Comfortable everyday trainers', 8499.00, 'Footwear', 'Puma', NOW(), TRUE, 90),
+('Bata Comfit Formal', 'Formal shoes for daily office wear', 2999.00, 'Footwear', 'Bata', NOW(), TRUE, 120),
+('LG OLED Evo 48"', 'Premium OLED Smart TV', 114999.00, 'Television', 'LG', NOW(), TRUE, 6),
+('Sony Bravia 43"', 'Full HD LED Android TV', 49999.00, 'Television', 'Sony', NOW(), TRUE, 14),
+('Mi TV 5X 50"', 'Android TV with Dolby Vision and Atmos', 35999.00, 'Television', 'Xiaomi', NOW(), TRUE, 20),
+('TP-Link Archer AX55', 'Wi-Fi 6 dual-band router', 7499.00, 'Accessories', 'TP-Link', NOW(), TRUE, 45),
+('HP X1000 Wired Mouse', 'USB optical mouse for everyday use', 399.00, 'Accessories', 'HP', NOW(), TRUE, 150),
+
+('Dell USB Keyboard', 'Full-size keyboard with spill resistance', 999.00, 'Accessories', 'Dell', NOW(), TRUE, 110),
+('WD My Passport 1TB', 'External hard drive with password protection', 4799.00, 'Accessories', 'Western Digital', NOW(), TRUE, 85),
+('Samsung T7 SSD 500GB', 'Portable SSD with USB 3.2', 5899.00, 'Accessories', 'Samsung', NOW(), TRUE, 40),
+('Apple Watch SE', 'Smartwatch with fitness features', 29999.00, 'Wearables', 'Apple', NOW(), TRUE, 28),
+('Samsung Galaxy Watch 6', 'Advanced smartwatch with health monitoring', 31999.00, 'Wearables', 'Samsung', NOW(), TRUE, 19),
+('Noise ColorFit Ultra 3', 'Affordable smartwatch with large display', 3499.00, 'Wearables', 'Noise', NOW(), TRUE, 90),
+('Fire-Boltt Ninja Call Pro', 'Budget smartwatch with Bluetooth calling', 1799.00, 'Wearables', 'Fire-Boltt', NOW(), TRUE, 140),
+('Fastrack Reflex Beat+', 'Fitness band with heart rate tracking', 1999.00, 'Wearables', 'Fastrack', NOW(), TRUE, 105),
+('Boult Audio AirBass', 'TWS earbuds with long battery life', 1399.00, 'Audio', 'Boult', NOW(), TRUE, 95),
+('boAt Airdopes 141', 'Popular wireless earbuds with ENx technology', 1499.00, 'Audio', 'boAt', NOW(), TRUE, 110);
